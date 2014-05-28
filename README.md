@@ -38,7 +38,7 @@ cart = DI.get(ShoppingCart)
 cart.add id: 1337
 ```
 
-### License 
+## License 
 
 (The MIT License)
 
