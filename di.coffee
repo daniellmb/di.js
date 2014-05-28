@@ -4,22 +4,22 @@
 ###
 
 DI =
-  # dependancies
+  # dependencies
   deps: {}
 
-  # register dependancy
+  # register dependency
   add: (name, obj) ->
     throw "dep #{name} already set" if @deps[name] isnt `undefined`
     @deps[name] = obj
     return
 
-# get dependancies
+  # get dependencies
   get: (func) ->
     obj = new func
     func.apply obj, @resolve(func)
     obj
 
-  # resolve deps
+  # resolve dependencies
   resolve: (func) ->
     args = @args(func)
     i = args.length
