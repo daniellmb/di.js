@@ -11,7 +11,7 @@ SimpleLogger::log = (msg) ->
 FancyLogger = ->
 FancyLogger:: = Object.create(Logger)
 FancyLogger::log = (msg) ->
-  console.log new Date().toString("HH:mm:ss") + ": #{msg}"
+  console.log new Date() + ": #{msg}"
 
 # cart depends on logger
 ShoppingCart = (logger) ->

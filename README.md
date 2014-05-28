@@ -4,7 +4,7 @@
 
 ## Example
 
-Run [live example](http://jsfiddle.net/daniellmb/yLrdA/2/)
+Run [live example](http://jsfiddle.net/daniellmb/62J3F/)
 
 ```CoffeeScript
 # logger interface
@@ -20,7 +20,7 @@ SimpleLogger::log = (msg) ->
 FancyLogger = ->
 FancyLogger:: = Object.create(Logger)
 FancyLogger::log = (msg) ->
-  console.log new Date().toString("HH:mm:ss") + ": #{msg}"
+  console.log new Date() + ": #{msg}"
 
 # cart depends on logger
 ShoppingCart = (logger) ->
